@@ -48,7 +48,7 @@
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	\icon{Globe}{11}{\href{http://www.google.com}{coming soon}}\\ 
+	\icon{Globe}{11}{coming soon}\\ 
     \icon{Phone}{11}{+4407717386378}\\
     \icon{MapMarker}{11}{London, UK}\\
 	
@@ -67,76 +67,41 @@
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.46\textwidth}
+\begin{minipage}[t]{0.56\textwidth}
     \cvsect{Summary}
 	\vspace{-6pt}
  
     %Dummy text
-	I am a 3rd year computer science student ...  \\
+	I am a 3rd year computer science student at the University of Edinburgh. 
+	I have been programming since I was 7 years old, and pride myself on my ability to implement a wide range of programming ideas in various laguages. 
+	I have always sought out problems to solve and I find that problem-solving is one of the most enoyable and interesting ways to apply myself. 
+	I believe that the diversity of my project focuses shows this. 
+	I excel in high-pressure and dynamic environments, as I have had to vie for excellence in many such environments - evidenced by my competition experience in climbing.\\
 \end{minipage}
 \hfill % Whitespace between
-\begin{minipage}[t]{0.465\textwidth}
+\begin{minipage}[t]{0.365\textwidth}
     \cvsect{Skills}
     \vspace{-6pt}
     
-    \begin{minipage}[t]{0.2\textwidth}
+    \begin{minipage}[t]{0.15\textwidth}
         \textbf{Languages:}
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-      Java, Python, C++, C, Haskell, Scala, 
+    \begin{minipage}[t]{0.68\textwidth}
+      Java, Python, C++, C, Haskell, Scala, MIPS
     \end{minipage}
     \vspace{4mm}
     
-    \begin{minipage}[t]{0.2\textwidth}
-        \textbf{Technologies:}
+    \begin{minipage}[t]{0.15\textwidth}
+        \textbf{Software:}
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-      Wireshark, ...
+    \begin{minipage}[t]{0.68\textwidth}
+      Wireshark, Visual Studio Code, Eclipse/IntelliJ, ...
     \end{minipage}
     
 \end{minipage}
 
-%----------------------------------------------------------------------------------------
-%	Projects
-%----------------------------------------------------------------------------------------
-\cvsect{Projects}
-\begin{entrylist}
-    \entry
-		{Hash Cracking}
-		{pwdtools}
-		{\href{https://github.com/JacobInwald/pwdtools}{github.com}}
-		{
-			A library of password related tools, from cracking plaintext passwords to cracking hashes. 
-		 	I also expanded this to allow for encryption/decryption using passwords as well as public key cryptography.
-		 }
-    \entry
-		{Dynamic Programming}
-		{Seam Carving}
-		{\href{https://github.com/JacobInwald/pwdtools}{github.com}}
-		{
-			I wrote a program to implement the seam-carving technique defined in Avidan and Shamir (2012). 
-		 	It was interesting to apply the concept of dynamic programming to a concrete example.
-		}
-	\entry
-		{Image Manipulation}
-		{Genetic Image Create}
-		{\href{https://github.com/JacobInwald/pwdtools}{github.com}}
-		{
-			I wrote a program that used an evolutionary algorithm to generate an image. 
-			It created generations of quadrilaterals and then bred them together to find the best fit for the image.
-			It created interesting, stylized images, which was my goal. 
-		}
-    \entry
-		{Classification}
-		{Optical Character Recognition - A-Level Project (achieved 98\%)}
-		{\href{https://github.com/JacobInwald/pwdtools}{github.com}}
-		{
-			I wrote a neural network that achieved 90\% accuracy on the MNIST character set. 
-			To make this a challenge, I did not allow myself to use any external libraries, apart from one for PRG.  
-		}
-\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -161,6 +126,48 @@
 		{ }
 \end{entrylist}
 
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{Hash Cracking}
+		{pwdtools}
+		{\href{https://github.com/JacobInwald/pwdtools}{github.com}}
+		{
+			A library of password related tools, from cracking plaintext passwords to cracking hashes. 
+		 	I also expanded this to allow for encryption/decryption using passwords as well as public key cryptography.
+		 }
+    \entry
+		{Dynamic Programming}
+		{Seam Carving}
+		{\href{https://github.com/JacobInwald/Seam-Carving}{github.com}}
+		{
+			I wrote a program to implement the seam-carving technique defined in Avidan and Shamir (2012). 
+		 	It was interesting to apply the concept of dynamic programming to a concrete example.
+		}
+	\entry
+		{Image Manipulation}
+		{Genetic Image Creation}
+		{\href{https://github.com/JacobInwald/generative-image-making}{github.com}}
+		{
+			I wrote a program that used an evolutionary algorithm to generate an image. 
+			It created generations of quadrilaterals and then bred them together to find the best fit for the image.
+			It created interesting, stylized images, which was my goal. 
+		}
+    \entry
+		{Classification}
+		{Optical Character Recognition - A-Level Project (achieved 98\%)}
+		{\href{https://github.com/JacobInwald/OCRAlgebra}{github.com}}
+		{
+			I wrote a neural network that achieved 90\% accuracy on the MNIST character set. 
+			To make this a challenge, I did not allow myself to use any external libraries, apart from one for PRG.  
+		}
+\end{entrylist}
+
+
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
@@ -168,35 +175,126 @@
 \cvsect{Experience}
 \begin{entrylist}
 	\entry
-        {x/2023 -- x/2023}
-		{\lipsum[1][1]}
-		{Company}
-		{\vspace{-10pt}
-        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item \lipsum[1][1-2]
-            \item \lipsum[1][3-4]
-        \end{itemize} 
-        \texttt{SQL} \slashsep \texttt{Excel}}
+	{7/2022 -- 7/2022}
+	{Work Experience – Software design}
+	{HELIX Centre, Imperial College London, London W2}
+	{
+		I was involved in projects, coding a program to quantify differences between medical guidelines.
+		I had to think critically and learn and adapt to complex tools in a short period, this included becoming proficient with the SNOMED database, made by the NHS. 
+		\newline
+		\texttt{python} \slashsep \texttt{Databases}
+	}
 	\entry
-		{x/2023 -- x/2023}
-		{\lipsum[1][1]}
-		{Company}
-		{\vspace{-10pt}
-        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item \lipsum[1][1-2]
-            \item \lipsum[1][3-4]
-        \end{itemize} 
-        \texttt{SQL} \slashsep \texttt{Excel}}
+        {2019}
+		{Google Code In}
+		{Google}
+		{
+			I participated in the code-in where I had to complete various tasks for different companies. 
+			This ranged from creating boot-up scripts for Fedora to writing a simple zipcracker. 
+			This gave me some insight into how open-source projects worked properly. 
+        	\newline
+			\texttt{Management} \slashsep \texttt{Teamwork} \slashsep \texttt{High-Pressure}
+		}
+		
+	% Maybe put on cyber-first
+	% \entry
+	% 	{2023 -- current \\\footnotesize{bursary holder}}
+	% 	{CyberFirst Bursary Scheme}
+	% 	{GCHQ}
+	% 	{\vspace{-10pt}
+    %     <insert info here>
+    %   }
+\end{entrylist}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Employment}
+\begin{entrylist}
 	\entry
-		{x/2023 -- x/2023 \\\footnotesize{scholarship holder}}
-		{\lipsum[1][1]}
-		{Company}
-		{\vspace{-10pt}
-        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item \lipsum[1][1-2]
-            \item \lipsum[1][3-4]
-        \end{itemize} 
-        \texttt{SQL} \slashsep \texttt{Excel}}
+        {7/2023 --  9/2023}
+		{Bartender and Waiter}
+		{Greenmantle, Greenmantle Group, Edinburgh EH8}
+		{
+			I ran a one-man box bar during the Fringe Festival in Edinburgh. 
+			This was located directly outside the ZOO playground venue, and therefore had many customers.
+			My role was to manage this bar, maintain the correct levels of stock, ensure that the customer experience was as good as possible, to close and open the box bar.
+			This required initiative as well as good management of resources.
+			After the Fringe was over, I worked as a bartender at other pubs part of the Greenmantle Group, which required an ability to adapt quickly to new environments as well the ability to mesh well with new colleagues and co-workers.
+        	\newline
+			\texttt{Management} \slashsep \texttt{Teamwork} \slashsep \texttt{High-Pressure}
+		}
+	\entry
+		{8/2022 -- 9/2022}
+		{Bartender and Waiter}
+		{The Shakespeare, Greene King Pubs, Edinburgh EH3}
+		{
+			I worked during the Edinburgh Festival, serving both food and beverages.
+			I had to mix drinks, change kegs, serve food, and provide a customer experience at the standard of Greene King Pubs.
+			This role involved quick thinking, teamwork, and customer service, all in a high-pressure environment as it was during in the international Fringe festival.
+			\newline
+			\texttt{Customer Service} \slashsep \texttt{Teamwork} \slashsep \texttt{High-Pressure}
+		}
+	\entry
+		{7/2018 -- 6/2019}
+		{Teaching Assistant}
+		{Religion School, Belsize Square Synagogue, London NW3}
+		{
+			I taught children from ages 5-13 Hebrew and Jewish Studies every Sunday.
+			This role involved leading discussions, managing classes of 9-12 children, maintaining their focus to ensure they were learning.
+			\newline
+			\texttt{Teaching}
+		}
+\end{entrylist}
+
+\vspace{-10 pt}
+\cvsect{Volunteering}
+\begin{entrylist}
+	\entry
+		{10/2023 -- current}
+		{Volunteer FOH}
+		{Shrub Coop Community Hub, Tollcross, Edinburgh EH3}
+		{
+			Serving coffee and creating a welcoming environment for people.
+			\newline
+			\texttt{Teaching}
+		}
+	\entry
+		{1/2018 -- 7/2018}
+		{Teaching Assistant}
+		{The Castle Climbing Centre, London N4}
+		{
+			I assisted teaching climbing technique and safety to children from ages 9-15 every Saturday.
+			This role involved leading warm-ups, creating engaging activities and managing classes of 6 children to ensure their safety.
+			\newline
+			\texttt{Teaching}
+		}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	Awards and Certificates
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Awards}
+\begin{entrylist}
+	\entry
+        {2021}
+		{Climbing Wall Instructor Training}
+		{Mountain Training}
+		{ 
+			I learnt how to teach climbing and safety to new climbers effectively, learning how to lead sessions well. 
+			\newline
+        	\texttt{Teaching}
+		}
+	\entry
+        {2019}
+		{DofE Silver}
+		{Duke of Edinburgh}
+		{ 
+		}
 \end{entrylist}
 
 
@@ -227,28 +325,16 @@
             \item Volunteered as an instructor for the younger classes. 
         \end{itemize} 
         \texttt{High-pressure performance} \slashsep \texttt{Team-work} \slashsep \texttt{Teaching}}
-	% Maybe put on cyber-first
-	% \entry
-	% 	{x/2023 -- x/2023 \\\footnotesize{scholarship holder}}
-	% 	{\lipsum[1][1]}
-	% 	{Company}
-	% 	{\vspace{-10pt}
-    %     \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-    %         \item \lipsum[1][1-2]
-    %         \item \lipsum[1][3-4]
-    %     \end{itemize} 
-    %     \texttt{SQL} \slashsep \texttt{Excel}}
+	\entry
+		{2013 -- current}
+		{Guitar and Piano}
+		{Self-Taught}
+		{
+			I have played guitar since I was 10 and taught myself jazz piano over lockdown. 
+			I have found comfort in music and take pride in being able to express myself with it. 
+        \newline
+		\texttt{Music}
+		}
 \end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	LANGUAGES
-%----------------------------------------------------------------------------------------
-\vspace{-10 pt}
-	\cvsect{Languages}
-    \vspace{-6pt}
-    
-    \hspace{26mm} \textbf{English} - natives
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
