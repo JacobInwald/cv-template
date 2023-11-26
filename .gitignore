@@ -1,0 +1,12 @@
+# Ignore all files in the build directory
+build/*
+!*.pdf
+
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore metals directory
+. metals
+
+# Ignore .vscode directory
+.vscode
