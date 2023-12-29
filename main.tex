@@ -24,8 +24,11 @@
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 \usepackage{multicol}
 \setlength{\columnsep}{0mm}
+\usepackage[none]{hyphenat}
+\raggedright
 %----------------------------------------------------------------------------------------
 \usepackage{lipsum}  
+
 
 
 \begin{document}
@@ -84,7 +87,7 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.60\textwidth}
-      Java, Python, C++, C, Haskell, Scala, MIPS, TeX
+      Java, Python, C\#, C, Haskell, Scala, MIPS, TeX
     \end{minipage}
     \vspace{4mm}
     
@@ -134,8 +137,11 @@
 		{\href{https://github.com/JacobInwald/pwdtools}{github.com}}
 		{
 			A library of password-related tools, from cracking plaintext passwords to cracking hashes. 
-		 	I also expanded this to allow for encryption/decryption using passwords as well as public key cryptography.
-		 }
+		 	% I also expanded this to allow for encryption/decryption using passwords as well as public key cryptography.
+			I also included a GPU-accelerated brute-force password cracker, achieving a rate of 4 billion passwords tested a second. 
+			\newline
+			\texttt{python} \slashsep \texttt{metals-framework} \slashsep \texttt{Obj-C}
+		}
     \entry
 		{Dynamic Programming}
 		{Seam Carving}
@@ -143,6 +149,8 @@
 		{
 			I wrote a program to implement the seam-carving technique defined by Avidan and Shamir (2012). 
 		 	It was interesting to apply the concept of dynamic programming to a concrete example.
+			 \newline
+			 \texttt{python}
 		}
 	\entry
 		{Image Manipulation}
@@ -152,14 +160,18 @@
 			I wrote a program that used an evolutionary algorithm to generate an image. 
 			It created generations of quadrilaterals and then bred them together to find the best fit for the image.
 			It created interesting, stylized images, which was my goal. 
+			\newline
+			\texttt{python}
 		}
     \entry
 		{Classification}
 		{Optical Character Recognition - A-Level Project (achieved 98\%)}
 		{\href{https://github.com/JacobInwald/OCRAlgebra}{github.com}}
 		{
-			I wrote a neural network that achieved 90\% accuracy on the MNIST character set. 
-			To make this a challenge, I did not allow myself to use any external libraries, apart from one for PRG.  
+			I wrote a neural network that achieved 90\% accuracy on the MNIST (Modified National Institute of Standards and Technology) character set. 
+			To make this a challenge, I did not allow myself to use any external libraries, apart from one for random number generation.  
+			\newline
+			\texttt{python}
 		}
 \end{entrylist}
 
@@ -233,16 +245,6 @@
 			\newline
 			\texttt{customer service} \slashsep \texttt{teamwork} \slashsep \texttt{high-pressure}
 		}
-	\entry
-		{7/2018 -- 6/2019}
-		{Teaching Assistant}
-		{Religion School, Belsize Square Synagogue, London NW3}
-		{
-			I taught children from ages 5-13 Hebrew and Jewish Studies every Sunday.
-			This role involved leading discussions, managing classes of 9-12 children, and maintaining their focus to ensure they were learning.
-			\newline
-			\texttt{teaching}
-		}
 \end{entrylist}
 
 \vspace{-10 pt}
@@ -255,7 +257,7 @@
 		{
 			Serving coffee and creating a welcoming environment for people.
 			\newline
-			\texttt{teaching}
+			\texttt{customer service} \slashsep \texttt{community}
 		}
 	\entry
 		{1/2018 -- 7/2018}
@@ -263,7 +265,7 @@
 		{The Castle Climbing Centre, London N4}
 		{
 			I assisted in teaching climbing techniques and safety to children from ages 9-15 every Saturday.
-			This role involved leading warm-ups, creating engaging activities and managing classes of 6 children to ensure their safety.
+			This role involved leading warm-ups, creating engaging activities, and managing classes of 6 children to ensure their safety.
 			\newline
 			\texttt{teaching}
 		}
@@ -306,8 +308,8 @@
 		{University of Edinburgh}
 		{\vspace{-10pt}
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item Competed in BUCS 2022, 2023, and will be competing in the 2024 event. 
-            \item Competed in NULSCC 2023. 
+            \item Competed in British University Climbing Series 2022, 2023, and will be competing in the 2024 event. 
+            \item Competed in National Universities Lead and Speed CLimbing Competition 2023. 
             \item Organized and ran coaching sessions for the Edinburgh University Mountaineering Club
         \end{itemize} 
         \texttt{high-pressure performance} \slashsep \texttt{team-work} \slashsep \texttt{teaching}}
@@ -317,7 +319,7 @@
 		{The Castle Climbing Centre}
 		{\vspace{-10pt}
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item Competed in the BMC Youth Climbing Series, coming 4th at one event.
+            \item Competed in the national British Mountaineering Club Youth Climbing Series, coming 4th at one event.
             \item Volunteered as an instructor for the younger classes. 
         \end{itemize} 
         \texttt{high-pressure performance} \slashsep \texttt{team-work} \slashsep \texttt{teaching}}
