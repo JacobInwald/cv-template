@@ -75,8 +75,8 @@
 %------------------------------------------------
 
 \usepackage{fontspec}
-\defaultfontfeatures{Path = /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fontawesome/ }
-\usepackage{fontawesome}
+\defaultfontfeatures{Path = /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fontawesome5/ }
+\usepackage{fontawesome5}
 
 % Command to output an icon in a black square box with text to the right
 \newcommand{\icon}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
