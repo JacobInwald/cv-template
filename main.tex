@@ -1,3 +1,4 @@
+%! TeX program = lualatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Developer CV
 % LaTeX Class
@@ -28,8 +29,29 @@
 \raggedright
 %----------------------------------------------------------------------------------------
 \usepackage{lipsum}  
+\usepackage{array,tabularx}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{scalerel}
+\usepackage{stackengine}
+\newcounter{iloop}
 
+% Define star command
+\newcommand\openbigstar[1][0.7]{%
+  \scalerel*{%
+    \stackinset{c}{-.125pt}{c}{}{\scalebox{#1}{\color{white}{$\bigstar$}}}{%
+      $\bigstar$}%
+  }{\bigstar}
+}
 
+% Define star rating command
+\newcommand{\Stars}[1]{\ensuremath{\setcounter{iloop}{0}%
+\loop\stepcounter{iloop}\ifnum\value{iloop}<#1
+\bigstar\repeat
+\bigstar
+\setcounter{iloop}{0}%
+\loop\stepcounter{iloop}\ifnum\value{iloop}<\the\numexpr6-#1\relax
+\openbigstar[0.5]\repeat}}
 
 \begin{document}
 
@@ -70,35 +92,29 @@
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.66\textwidth}
+\begin{minipage}[t]{0.75\textwidth}
     \cvsect{Summary}
-    From a young age, I have sought out problems to solve. 
-	I got my first Raspberry Pi at 9 and I have not stopped programming since, learning C++ and Java to create games and Python to sketch out programming concepts. 
-	I find that problem-solving is the most enjoyable and stimulating way to apply myself and I believe that the diversity of my project focuses shows this. 
-    I excel in high-pressure and dynamic environments, as I have had to vie for excellence in many such environments - evidenced by my competitive experience in climbing.
+I am a Computer Science student at the University of Edinburgh, pursuing cyber security related fields. 
+I have a strong background in programming, with a focus on Python and C, and I have experience in a variety of fields, from image manipulation to network security. 
+My honours project - containerizing CVE exploit-code pairs to address the replication crisis in Cyber Security, has required me to hone skills with Docker, Makefile, Bash and C programming, alongside skilled use of Linux.
+My courses at University have required me to interact with a breadth of knowledge, from PCAP analysis to melanoma recognition with deep learning, and my achievements at university demonstrate my success. 
+My interests lie in the intersection of computer science and security, with a focus on security research and network security.
+While I have enjoyed my time at university, pushing the boundaries of my knowledge, \textit{applying} this knowledge to real-life high-stakes scenarios is something I believe I would excel in. 
 \end{minipage}
 \hfill % Whitespace between
-\begin{minipage}[t]{0.265\textwidth}
+\begin{minipage}[t]{0.24\textwidth}
     \cvsect{Skills}
-    \vspace{-6pt}
-    
-    \begin{minipage}[t]{0.23\textwidth}
-        \textbf{Languages:}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.60\textwidth}
-      Java, Python, C\#, C, Haskell, Scala, MIPS, TeX
-    \end{minipage}
-    \vspace{4mm}
-    
-    \begin{minipage}[t]{0.15\textwidth}
-        \textbf{Software:}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.68\textwidth}
-      Wireshark, Visual Studio Code, Eclipse/IntelliJ, ...
-    \end{minipage}
-    
+    \vfill
+    \begin{tabularx}{0.95\textwidth}{l>{\raggedleft\arraybackslash}X}
+      Python &  \Stars{5}\\
+      C      &  \Stars{4}\\
+      Docker &  \Stars{4}\\
+      Linux  &  \Stars{4}\\
+      Haskell&  \Stars{4}\\
+      Pcap Analysis & \Stars{3}\\
+      Bash   &  \Stars{3}\\
+      ML/DL    &  \Stars{3}\\
+    \end{tabularx}
 \end{minipage}
 
 
@@ -132,6 +148,17 @@
 \vspace{-20 pt}
 \cvsect{Projects}
 \begin{entrylist}
+ 	\entry
+		{Security Research}
+		{Honours Project - Containerizing Exploits}
+    {github available on request}
+		{
+      For my honours project, I am working on containerizing CVE exploit-code pairs to investigate \texttt{gcc}'s security hardening features.      This has required me to do extensive research into security hardening methods, and research a variety of different memory corruption errors in C. 
+      As part of this project, I have had to replicate years old security vulnerabilities, often with little documentation. 
+      As such, this project has honed my Linux, Dockerfile, C and Bash skills, and taught me a lot about the intricacies of exploits.
+			\newline
+			\texttt{python}
+		}  
     \entry
 		{Hash Cracking}
 		{pwdtools}
@@ -153,17 +180,17 @@
 			 \newline
 			 \texttt{python}
 		}
-	\entry
-		{Image Manipulation}
-		{Genetic Image Creation}
-		{\href{https://github.com/JacobInwald/generative-image-making}{github.com}}
-		{
-			I wrote a program that used an evolutionary algorithm to generate an image. 
-			It created generations of quadrilaterals and then bred them together to find the best fit for the image.
-			It created interesting, stylized images, which was my goal. 
-			\newline
-			\texttt{python}
-		}
+	% \entry
+	% 	{Image Manipulation}
+	% 	{Genetic Image Creation}
+	% 	{\href{https://github.com/JacobInwald/generative-image-making}{github.com}}
+	% 	{
+	% 		I wrote a program that used an evolutionary algorithm to generate an image. 
+	% 		It created generations of quadrilaterals and then bred them together to find the best fit for the image.
+	% 		It created interesting, stylized images, which was my goal. 
+	% 		\newline
+	% 		\texttt{python}
+	% 	}
     \entry
 		{Classification}
 		{Optical Character Recognition - A-Level Project (achieved 98\%)}
@@ -286,15 +313,6 @@
         	\newline
 			\texttt{python} \slashsep \texttt{bash} \slashsep \texttt{open-source development}
 		}
-		
-	% Maybe put on cyber-first
-	% \entry
-	% 	{2023 -- current \\\footnotesize{bursary holder}}
-	% 	{CyberFirst Bursary Scheme}
-	% 	{GCHQ}
-	% 	{\vspace{-10pt}
-    %     <insert info here>
-    %   }
 \end{entrylist}
 
 
